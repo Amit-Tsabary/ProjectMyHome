@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountManagement"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/enter_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Edit account details:"
+        android:textSize="24sp"
+        android:fontFamily="@font/my_font"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginEnd="10dp">
+        <Button
+            android:id="@+id/delete_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:drawableLeft="@drawable/ic_baseline_delete_24"
+            android:padding="12dp"
+            android:text=" delete"
+            android:textColor="@color/texts"
+            android:textSize="14sp"
+            android:fontFamily="@font/my_font"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/first_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="first name"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:textSize="22sp"
+        android:selectAllOnFocus="true"
+        android:autofillHints=""
+        android:fontFamily="@font/my_font"/>
+
+    <EditText
+        android:id="@+id/last_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:hint="last name"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:textSize="22sp"
+        android:selectAllOnFocus="true"
+        android:autofillHints=""
+        android:fontFamily="@font/my_font"/>
+
+
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:textSize="22sp"
+        android:selectAllOnFocus="true"
+        android:autofillHints=""
+        android:fontFamily="@font/my_font"/>
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        android:selectAllOnFocus="true"
+        android:autofillHints=""
+        android:fontFamily="@font/my_font"/>
+
+    <TextView
+        android:id="@+id/error_msg_crate_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:fontFamily="@font/my_font"/>
+
+    <Button
+        android:id="@+id/btn_submit_changes_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_design"
+        android:textColor="@color/texts"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:text="Submit Changes"
+        android:fontFamily="@font/my_font"/>
+
+</LinearLayout>
